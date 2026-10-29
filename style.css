@@ -13,6 +13,8 @@ body {
 
 h1, h2 {
     color: #182241;
+    font-family: 'Rubik', Arial, sans-serif;
+    font-weight: 500;
 }
 
 .card {
