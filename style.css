@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+
+body {
+    background-color: #fff5d9;
+    color: #182241;
+    font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #182241;
+}
+
+.card {
+    background-color: white;
+    padding: 24px;
+    border-radius: 16px;
+    border: 2px solid #182241;
+}
+
+.hero {
+    background: linear-gradient(135deg, #182241, #213c4e);
+    color: #fff5d9;
+    text-align: center;
+    padding: 48px 24px;
+    border-radius: 16px;
+}
+
+.hero h1 {
+    color: #fff5d9;
+}
+
+.hero, .card {
+    margin-bottom: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.top-bar a {
+    color: #182241;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    background-color: #536c7c;
+    color: #fff5d9;
+    border: 2px solid #fff5d9;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.button:hover {
+    background-color: #fff5d9;
+    color: #182241;
+}
+
+.top-bar a:hover {
+    color: #536c7c;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .hero {
+        padding: 32px 16px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
