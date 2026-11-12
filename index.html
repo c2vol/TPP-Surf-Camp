@@ -7,103 +7,264 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="top-bar">
-    <a href="#about">About</a>
-    <a href="#bring">What to Bring</a>
-    <a href="#cost">Cost</a>
-</nav>
 
-<header class="hero">
-    <h1>Resonance Surf Camp</h1>
-    <p>A week of surfing, sun, and friendship for people of all abilities, hosted by The Peyton Project.</p>
-    <p id="countdown"></p>
-    <a class="button" href="#signup">Sign up for camp</a>
+<!-- Anything inside <span class="todo">...</span> is a placeholder we still need real info for. -->
+
+<!-- NAV -->
+<header class="site-header">
+    <nav class="top-bar" aria-label="Main">
+        <a class="brand" href="#top">
+            <span class="brand-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"></path><path d="M2 19c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"></path><path d="M7 11c0-4 3-7 7-7 0 3-2 5-5 5"></path></svg>
+            </span>
+            <span class="brand-text">
+                <span class="brand-name">Resonance Surf Camp</span>
+                <span class="brand-sub">by The Peyton Project</span>
+            </span>
+        </a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#day">The Day</a>
+            <a href="#fit">Is it a fit?</a>
+            <a href="#details">Cost</a>
+            <a href="#volunteer">Volunteer</a>
+            <a href="#faq">FAQ</a>
+            <a class="button button-orange" href="#signup">Register a surfer</a>
+        </div>
+    </nav>
 </header>
-<div class="card">
-    <h2>Is my child a fit? </h2>
-    <ul>
-        <li>a section heading with the text Is my child a fit?</li>
-        <li>a short paragraph saying who the camp is for</li>
-        <li>a bullet list with 2 or 3 points, like All abilities welcome, Ages (ask your brother), Siblings welcome
-            too
-        </li>
-    </ul>
-</div>
 
-<!-- TODO: Get Info From Mom and Dad for this -->
-<div class="card" id="about">
-    <h2>About the camp</h2>
-    <p>A week of surfing for kids and families.</p>
-</div>
+<!-- HERO -->
+<section class="hero" id="top">
+    <div class="container two-col">
+        <div class="stack">
+            <p class="eyebrow eyebrow-light">4th week of May 2027 · Wrightsville Beach, NC</p>
+            <h1>Every kid deserves a wave.</h1>
+            <p class="hero-text">A week of surfing, sun, and friendship for people of all abilities, hosted by The Peyton Project. Parents stay on the beach all day, and they can surf too.</p>
+            <p id="countdown"></p>
+            <div class="button-row">
+                <a class="button button-orange" href="#signup">Register a surfer</a>
+                <a class="button button-outline" href="#volunteer">Volunteer in the water</a>
+            </div>
+        </div>
+        <div class="photo-placeholder"><span class="todo">PHOTO: a surfer riding a wave with an instructor (only with the family's permission)</span></div>
+    </div>
+    <svg class="wave" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30 C 240 0, 480 60, 720 30 S 1200 0, 1440 30 L1440 60 L0 60 Z" fill="#FBF6EC"></path></svg>
+</section>
 
-<div class="card" id="bring">
-    <h2>What to Bring</h2>
-    <ul>
-        <li>Swimsuits</li>
-        <li>Towels</li>
-        <li>Sunscreen</li>
-    </ul>
-</div>
-<div class="card">
-    <h2>When and Where</h2>
-    <ul>
-        <li> Wrightsville Beach, NC</li>
-        <li> 4th week of May 2027</li>
-    </ul>
-</div>
-<div class="card" id="cost">
-    <h2>Cost</h2>
-    <table>
-        <tr>
-            <th>Item</th>
-            <th>Price</th>
-        </tr>
-        <tr>
-            <td>Surf Lessons</td>
-            <td>$</td>
-        </tr>
-        <tr>
-            <td>Board</td>
-            <td>$</td>
-        </tr>
-        <tr>
-            <td>Wetsuit</td>
-            <td>$</td>
-        </tr>
-        <tr>
-            <td>T-Shirt</td>
-            <td>$</td>
-        </tr>
-        <tr>
-            <td>Total</td>
-            <td>$</td>
-        </tr>
-        <!-- TODO: get real prices from Mom -->
-    </table>
-</div>
-<div class="card" id="signup">
-    <h2>Sign up</h2>
-    <iframe data-tally-src="https://tally.so/embed/xVVGek?transparentBackground=1&dynamicHeight=1" loading="lazy"
-            width="100%" height="1051" frameborder="0" marginheight="0" marginwidth="0"
-            title="Resonance Surf Camp Sign Up"></iframe>
-    <script>var d = document, w = "https://tally.so/widgets/embed.js", v = function () {
-        "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function (e) {
-            e.src = e.dataset.tallySrc
-        }))
-    };
-    if ("undefined" != typeof Tally) v(); else if (d.querySelector('script[src="' + w + '"]') == null) {
-        var s = d.createElement("script");
-        s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s);
-    }</script>
-</div>
-<a href="https://thepeytonproject.com">Visit The Peyton Project</a>
+<!-- ABOUT -->
+<section id="about">
+    <div class="container two-col">
+        <div class="stack">
+            <p class="eyebrow">Why surf camp</p>
+            <h2>The ocean is for everybody.</h2>
+        </div>
+        <div class="stack body-text">
+            <p>Resonance Surf Camp is a program of The Peyton Project, a Knoxville 501(c)(3). It started with Peyton, who didn't speak, and for years nobody could hear what he had to say, until a letter board changed everything.</p>
+            <p>Camp carries that idea to the beach for every kind of ability: wheelchair users, kids who are blind or Deaf, autistic and non-speaking kids, and everyone in between. We meet each surfer where they are, presume competence, and make the ocean a place of joy.</p>
+            <a class="text-link" href="https://www.thepeytonproject.com/">Learn about The Peyton Project →</a>
+        </div>
+    </div>
+</section>
 
-</body>
+<!-- IS MY CHILD A FIT? -->
+<section id="fit">
+    <div class="container">
+        <div class="card two-col">
+            <div class="stack">
+                <h2>Is my child a fit?</h2>
+                <p class="body-text">If you're wondering, the answer is probably yes. Resonance is built for surfers of every ability, and for the families who come with them.</p>
+            </div>
+            <ul class="check-list">
+                <li>All abilities welcome</li>
+                <li>Ages <span class="todo">AGES</span></li>
+                <li>Siblings welcome too</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- WHAT TO EXPECT -->
+<section class="white-band">
+    <div class="container stack-lg">
+        <h2>What surfers can expect</h2>
+        <div class="tile-grid">
+            <div class="tile">
+                <h3>Instructors who stay close</h3>
+                <p>Trained volunteers paddle out with each surfer, at their pace. <span class="todo">CONFIRM RATIO, e.g. 2 volunteers per surfer</span></p>
+            </div>
+            <div class="tile">
+                <h3>Adaptive gear and access</h3>
+                <p>Adaptive boards, beach wheelchairs, mat pathways to the water, and a quiet tent for breaks. <span class="todo">CONFIRM WHAT WE HAVE</span></p>
+            </div>
+            <div class="tile">
+                <h3>Every voice counts</h3>
+                <p>Letter boards, AAC devices and picture schedules are welcome. Bring what your surfer uses.</p>
+            </div>
+            <div class="tile">
+                <h3>Families on the beach</h3>
+                <p>Parents and siblings are part of the day: lunch, photos, time with families who get it, and a chance to surf too.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- A TYPICAL DAY -->
+<section id="day">
+    <div class="container two-col">
+        <div class="stack">
+            <p class="eyebrow">A typical camp day</p>
+            <h2>A predictable schedule, so nothing is a surprise.</h2>
+            <p class="body-text">We'll email a picture schedule before camp so your surfer can preview the day.</p>
+        </div>
+        <ol class="schedule">
+            <li><span class="time"><span class="todo">8:00</span></span><span><b>Check-in:</b> wristbands, sunscreen, meet your instructors</span></li>
+            <li><span class="time"><span class="todo">8:30</span></span><span><b>Sand lesson:</b> practice on the board before the water</span></li>
+            <li><span class="time"><span class="todo">9:00</span></span><span><b>Surf sessions:</b> in small groups, with breaks whenever needed</span></li>
+            <li><span class="time"><span class="todo">12:00</span></span><span><b>Lunch and awards:</b> every surfer goes home with a medal</span></li>
+        </ol>
+    </div>
+</section>
+
+<!-- WHEN, WHERE AND COST -->
+<section class="navy-band" id="details">
+    <div class="container stack-lg">
+        <h2>When, where and cost</h2>
+        <dl class="fact-grid">
+            <div class="fact">
+                <dt>When</dt>
+                <dd>4th week of May 2027 <span class="todo">EXACT DATES</span></dd>
+            </div>
+            <div class="fact">
+                <dt>Where</dt>
+                <dd>Wrightsville Beach, NC</dd>
+            </div>
+            <div class="fact">
+                <dt>Who</dt>
+                <dd>Ages <span class="todo">X–Y</span></dd>
+            </div>
+            <div class="fact">
+                <dt>Length</dt>
+                <dd>One week</dd>
+            </div>
+        </dl>
+        <div class="panel-grid">
+            <div class="panel" id="cost">
+                <h3>Cost</h3>
+                <p class="big-free">Camp is free.</p>
+                <p>The Peyton Project pays for the camp itself. Families only cover their own travel and lodging.</p>
+            </div>
+            <div class="panel" id="bring">
+                <h3>What to bring</h3>
+                <ul class="line-list">
+                    <li>Swimsuits</li>
+                    <li>Towels</li>
+                    <li>Sunscreen</li>
+                    <li>Any communication tools, mobility aids or comfort items your surfer uses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SIGN UP (Tally form) -->
+<section id="signup">
+    <div class="container two-col">
+        <div class="stack">
+            <p class="eyebrow">Register</p>
+            <h2>Save your surfer's spot.</h2>
+            <p class="body-text">Spots are limited to <span class="todo">NUMBER</span> surfers so everyone gets real time in the water. After you sign up, we'll follow up about your surfer's mobility, communication, sensory and medical needs, and how comfortable they are in the water.</p>
+        </div>
+        <div class="card form-card">
+            <iframe data-tally-src="https://tally.so/embed/xVVGek?transparentBackground=1&dynamicHeight=1" loading="lazy"
+                    width="100%" height="1051" frameborder="0" marginheight="0" marginwidth="0"
+                    title="Resonance Surf Camp Sign Up"></iframe>
+            <script>var d = document, w = "https://tally.so/widgets/embed.js", v = function () {
+                "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function (e) {
+                    e.src = e.dataset.tallySrc
+                }))
+            };
+            if ("undefined" != typeof Tally) v(); else if (d.querySelector('script[src="' + w + '"]') == null) {
+                var s = d.createElement("script");
+                s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s);
+            }</script>
+        </div>
+    </div>
+</section>
+
+<!-- VOLUNTEER AND SPONSOR -->
+<section class="white-band" id="volunteer">
+    <div class="container panel-grid">
+        <div class="big-card big-card-teal">
+            <h2>Volunteer</h2>
+            <p>Strong swimmers and surfers help in the water. Everyone else keeps the beach running: check-in, the quiet tent, lunch and photos.</p>
+            <a class="button button-teal" href="mailto:info@thepeytonproject.com?subject=Volunteering%20at%20Resonance%20Surf%20Camp">Sign up to help</a>
+        </div>
+        <div class="big-card big-card-peach">
+            <h2>Sponsor a surfer</h2>
+            <p>Lessons, boards and wetsuits add up. Your gift pays for a surfer's week in the water. <span class="todo">CONFIRM: cost to sponsor one surfer</span></p>
+            <a class="button button-navy" href="https://www.paypal.com/paypalme/thepeytonproject">Donate</a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+    <div class="container narrow stack">
+        <h2>Questions families ask</h2>
+        <details>
+            <summary>My child has never been in the ocean. Is that okay?</summary>
+            <p>Yes. Many surfers start on the sand and only go as far as they're comfortable. There's no pressure to stand up, or to go in at all.</p>
+        </details>
+        <details>
+            <summary>My child uses a wheelchair. Can they surf?</summary>
+            <p><span class="todo">CONFIRM</span> Yes. Instructors help with transfers, and adaptive boards let surfers ride seated or lying down.</p>
+        </details>
+        <details>
+            <summary>Does my surfer need to know how to swim?</summary>
+            <p><span class="todo">CONFIRM POLICY</span> Every surfer wears a life vest and stays with instructors in the water.</p>
+        </details>
+        <details>
+            <summary>Can parents surf too?</summary>
+            <p>Yes. Parents stay on the beach all day, and they're welcome to get in the water.</p>
+        </details>
+        <details>
+            <summary>Can siblings come too?</summary>
+            <p>Yes, siblings are welcome.</p>
+        </details>
+        <details>
+            <summary>What does it cost?</summary>
+            <p>Camp is free. Families only cover their own travel and lodging.</p>
+        </details>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="stack-sm">
+            <span class="footer-title">Resonance Surf Camp</span>
+            <span>A program of The Peyton Project Inc., a 501(c)(3) charity</span>
+        </div>
+        <div class="stack-sm">
+            <span class="footer-label">Mail</span>
+            <span>PO Box 22293<br>Knoxville, TN 37933</span>
+        </div>
+        <div class="stack-sm">
+            <span class="footer-label">Contact</span>
+            <a href="mailto:info@thepeytonproject.com">info@thepeytonproject.com</a>
+            <a href="https://www.instagram.com/peyton_project">Instagram</a>
+            <a href="https://www.facebook.com/thepeytonproject">Facebook</a>
+            <a href="https://www.thepeytonproject.com">Visit The Peyton Project</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Countdown: on hold until the start date is firm. -->
 <!--<script>const campStart = new Date("2027-05-24T00:00:00");-->
 <!--const today = new Date();-->
 <!--const msPerDay = 1000 * 60 * 60 * 24;-->
 <!--const daysLeft = Math.ceil((campStart - today) / msPerDay);-->
 <!--document.getElementById("countdown").textContent = daysLeft + " days until camp!";</script>-->
-<!--</html>-->
-
-
+</body>
+</html>
